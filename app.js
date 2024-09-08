@@ -17,9 +17,9 @@ const app = express();
 
 // app.use(morgan('combined'))
 app.use(fileUpload());
-const PORT = 3003;
+const PORT = 3001;
 app.listen(PORT, () => {
-  console.log("server listen at port 3003");
+  console.log("server listen at port 3001");
 });
 app.use(express.static("files"));
 app.use(express.json());
